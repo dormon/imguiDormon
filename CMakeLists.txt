@@ -2,14 +2,15 @@ cmake_minimum_required(VERSION 3.13.0)
 
 project(
   imguiDormon
-  VERSION 1.0.0
+  VERSION 1.1.0
   )
 
 #set these variables to *.cpp, *.c, ..., *.h, *.hpp, ...
 set(SOURCES 
-  src/${PROJECT_NAME}/imgui_demo.cpp
   src/${PROJECT_NAME}/imgui.cpp
+  src/${PROJECT_NAME}/imgui_demo.cpp
   src/${PROJECT_NAME}/imgui_draw.cpp
+  src/${PROJECT_NAME}/imgui_widgets.cpp
   )
 set(PRIVATE_INCLUDES 
   )
@@ -17,9 +18,9 @@ set(PUBLIC_INCLUDES
   src/${PROJECT_NAME}/imconfig.h
   src/${PROJECT_NAME}/imgui.h
   src/${PROJECT_NAME}/imgui_internal.h
-  src/${PROJECT_NAME}/stb_rect_pack.h
-  src/${PROJECT_NAME}/stb_textedit.h
-  src/${PROJECT_NAME}/stb_truetype.h
+  src/${PROJECT_NAME}/imstb_rectpack.h
+  src/${PROJECT_NAME}/imstb_textedit.h
+  src/${PROJECT_NAME}/imstb_truetype.h
   )
 set(INTERFACE_INCLUDES )
 
